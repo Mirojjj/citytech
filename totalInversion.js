@@ -1,3 +1,13 @@
+/* 
+The given problem is similart to merge sort where we divide the given array into two halves and start the counter from two sides left and right.
+Based on these index we can check for the "and" condition that is 
+a) i<j or right is greater than left
+and 
+b) array[i]>array[j] or left element is greater than the right element 
+if these two conditions are matched we increase the inversion counter by 1 and finally the inversion are retured by countInversions function 
+and stored in the totalInversions varaible and are finally console logged as output.
+*/
+
 function countInversions(arr) {
   // Helper function to perform merge sort and count inversions
   function mergeAndCount(arr, left, mid, right) {
